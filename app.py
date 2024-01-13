@@ -3,6 +3,7 @@ import tensorflow as tf
 from PIL import Image
 import numpy as np
 import h5py as h5
+from tensorflow.keras.models import load_model
 
 # Load  trained model
 model = tf.keras.models.load_model('solarpanelimageclassifier.h5')
