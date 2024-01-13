@@ -38,3 +38,6 @@ if uploaded_file is not None:
         st.write("Prediction: Dusty Solar Panel")
     else:
         st.write("Prediction: Clean Solar Panel")
+
+st.markdown("[Download Sample Data](https://drive.google.com/drive/folders/12Q3MBI8SPw0vHsO_kkS5izkxw0F7tXx4)")
+
