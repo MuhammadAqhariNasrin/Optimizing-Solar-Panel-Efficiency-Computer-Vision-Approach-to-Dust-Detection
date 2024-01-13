@@ -3,7 +3,7 @@ import tensorflow as tf
 from PIL import Image
 import numpy as np
 
-# Load your trained model
+# Load  trained model
 model = tf.keras.models.load_model("solarpanelimageclassifier.h5")
 
 # Streamlit app
