@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 
 # Load your trained model
-model = tf.keras.models.load_model(r"C:\Users\muham\OneDrive\Desktop\Solar Panel Computer Vision\dataset\Model\solarpanelimageclassifier.h5")
+model = tf.keras.models.load_model("solarpanelimageclassifier.h5")
 
 # Streamlit app
 st.title("Solar Panel Classifier")
@@ -38,3 +38,6 @@ if uploaded_file is not None:
         st.write("Prediction: Dusty Solar Panel")
     else:
         st.write("Prediction: Clean Solar Panel")
+
+st.markdown("[Download Sample Data](https://drive.google.com/drive/folders/12Q3MBI8SPw0vHsO_kkS5izkxw0F7tXx4)")
+
