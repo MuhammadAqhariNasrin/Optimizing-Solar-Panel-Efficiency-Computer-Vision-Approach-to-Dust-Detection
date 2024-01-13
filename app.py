@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 
 # Load your trained model
-model = tf.keras.models.load_model(r"C:\Users\muham\OneDrive\Desktop\New folder\Optimizing-Solar-Panel-Efficiency-Computer-Vision-Approach-to-Dust-Detection-on-Solar-Panel\solarpanelimageclassifier.h5")
+model = tf.keras.models.load_model("solarpanelimageclassifier.h5")
 
 # Streamlit app
 st.title("Solar Panel Classifier")
