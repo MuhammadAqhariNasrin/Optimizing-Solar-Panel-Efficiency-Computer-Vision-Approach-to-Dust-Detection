@@ -65,7 +65,7 @@ The model was trained for 20 epochs. The achieved accuracy on the validation set
 
 The pre-trained model for chest solar panel image classification is available in the repository as solarpanelimageclassification.h5.
 
-## Acknowledgments
+## Acknowledgements
 
 The solar panel image dataset was compiled by:
 
