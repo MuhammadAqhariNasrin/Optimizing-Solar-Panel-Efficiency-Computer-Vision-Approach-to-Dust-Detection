@@ -17,10 +17,10 @@ model = tf.keras.models.load_model('model.h5',compile=False)
 st.title("Solar Panel Classifier")
 
 # Display information about the author and data source
-    st.subheader("About the Author:")
-    st.text("Name: Muhammad Aqhari Nasrin")
-    st.text("Email: muhammad.aqhari.nasrin@gmail.com")
-    st.markdown("LinkedIn: [Muhammad Aqhari Nasrin](https://www.linkedin.com/in/muhammad-aqhari-nasrin)")
+st.subheader("About the Author:")
+st.text("Name: Muhammad Aqhari Nasrin")
+st.text("Email: muhammad.aqhari.nasrin@gmail.com")
+st.markdown("LinkedIn: [Muhammad Aqhari Nasrin](https://www.linkedin.com/in/muhammad-aqhari-nasrin)")
 
 # Upload image through Streamlit interface
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
