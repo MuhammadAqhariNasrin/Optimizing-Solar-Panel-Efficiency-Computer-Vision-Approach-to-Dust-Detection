@@ -4,9 +4,15 @@ from PIL import Image
 import numpy as np
 import h5py as h5
 from tensorflow.keras.models import load_model
+import subprocess
+import os
+
+if not os.path.isfile('solarpanelimageclassifier.h5'):
+    subprocess.run(['curl --output solarpanelimageclassifier.h5 "https://github.com/MuhammadAqhariNasrin/Optimizing-Solar-Panel-Efficiency-Computer-Vision-Approach-to-Dust-Detection-on-Solar-Panel/blob/main/solarpanelimageclassifier.h5"'], shell=True)
+
 
 # Load  trained model
-model = tf.keras.models.load_model('solarpanelimageclassifier.h5')
+model = tf.keras.models.load_model('solarpanelimageclassifier.h5',compile=False)
 
 # Streamlit app
 st.title("Solar Panel Classifier")
