@@ -8,7 +8,7 @@ import subprocess
 import os
 
 if not os.path.isfile('solarpanelimageclassifier.h5'):
-    subprocess.run(['curl --output solarpanelimageclassifier.h5 "https://github.com/MuhammadAqhariNasrin/Optimizing-Solar-Panel-Efficiency-Computer-Vision-Approach-to-Dust-Detection-on-Solar-Panel/blob/c7346c6cdb4b8557a75b27aa2898866b5d0b2862/solarpanelimageclassifier.h5"'], shell=True)
+    subprocess.run(['curl --output solarpanelimageclassifier.h5 "https://media.githubusercontent.com/media/MuhammadAqhariNasrin/Optimizing-Solar-Panel-Efficiency-Computer-Vision-Approach-to-Dust-Detection-on-Solar-Panel/main/solarpanelimageclassifier.h5"'], shell=True)
 
 
 model = tf.keras.models.load_model('solarpanelimageclassifier.h5',compile=False)
