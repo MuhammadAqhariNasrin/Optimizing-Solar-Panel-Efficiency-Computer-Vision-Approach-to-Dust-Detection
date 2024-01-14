@@ -7,11 +7,11 @@ from tensorflow.keras.models import load_model
 import subprocess
 import os
 
-if not os.path.isfile('solarpanelimageclassifier.h5'):
-    subprocess.run(['curl --output solarpanelimageclassifier.h5 "https://media.githubusercontent.com/media/MuhammadAqhariNasrin/Optimizing-Solar-Panel-Efficiency-Computer-Vision-Approach-to-Dust-Detection-on-Solar-Panel/main/solarpanelimageclassifier.h5"'], shell=True)
+if not os.path.isfile('model.h5'):
+    subprocess.run(['curl --output model.h5 "https://media.githubusercontent.com/media/MuhammadAqhariNasrin/Optimizing-Solar-Panel-Efficiency-Computer-Vision-Approach-to-Dust-Detection-on-Solar-Panel/main/solarpanelimageclassifier.h5"'], shell=True)
 
 
-model = tf.keras.models.load_model('solarpanelimageclassifier.h5',compile=False)
+model = tf.keras.models.load_model('model.h5',compile=False)
 
 # Streamlit app
 st.title("Solar Panel Classifier")
