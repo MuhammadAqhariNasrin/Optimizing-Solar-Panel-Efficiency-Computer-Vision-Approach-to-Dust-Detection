@@ -1,8 +1,5 @@
 
 
-
-![Uploading _5ae8541a-c651-4b14-9256-39b8f2f82024.jpg…]()
-
 # Optimizing Solar Panel Efficiency: Computer Vision Approach to Dust Detection
 
 ## Overview
